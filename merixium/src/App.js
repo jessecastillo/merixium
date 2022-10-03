@@ -1,8 +1,13 @@
-
 import { createMuiTheme, ThemeProvider } from '@mui/material/styles'
-import CustomButton from './components/CustomButton';
-import logo from './logo.svg';
+import NavBar from './components/NavBar.js';
+//import CustomButton from './components/CustomButton';
+//import logo from './logo.svg';
 import './App.css';
+import { NativeSelect } from '@mui/material';
+import { Component } from 'react';
+import Pricing from './pages/Pricing';
+import Home from './pages/Home';
+import About from './pages/About';
 
 const theme = createMuiTheme({
   palette: {
@@ -14,13 +19,26 @@ const theme = createMuiTheme({
 })
 
 function App() {
+  let component
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />
+      break
+    case "/pricing":
+      component = <Pricing />
+      break
+    case "/about":
+      component = <About />
+      break
+
+  }
   return (
-    <div className="App">
-      <ThemeProvider theme = {theme}>
-        <CustomButton/>
-      </ThemeProvider>
-    </div>
-  );
+    <>
+    <NavBar />
+    <div className="conainer">{component}</div>
+    
+  </>
+  )
 }
 
 export default App;

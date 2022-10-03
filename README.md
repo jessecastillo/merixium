@@ -1,1 +1,1 @@
-# merixium
+cd # merixium
