@@ -25,6 +25,7 @@ const theme = createMuiTheme({
   
 
 function App() {
+  
   const [bgColour, setBgColour] = useState("#fafafa");
   let component
   const appStyles = {
