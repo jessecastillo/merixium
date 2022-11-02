@@ -57,12 +57,10 @@ export default function NavBar() {
                                 About
                             </Link>
                         </li>
-                        <li>
-                            {button && <Button buttonStyle='btn--outline'>Easter Eggs</Button>}
-                            </li>
-                            </ul>
-                            </div>
-                            </nav>
+                        </ul>
+                        {button && <Button buttonStyle='btn--outline'>Easter Eggs</Button>}
+                    </div>
+                    </nav>
     )
 }
 

@@ -75,7 +75,7 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path = '/' exact component = {Home}/>
+          <Route path = '/' exact component = {Home} />
         </Routes>
         <div className="container">{component}</div>
       </Router>
