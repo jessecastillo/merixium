@@ -1,8 +1,8 @@
-import { Button } from '@mui/material';
+//import { Button } from '@mui/material';
 import React, { useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-//import { Button } from './Button';
+import { Button } from './Button';
 
 
 export default function NavBar() {
@@ -34,7 +34,7 @@ export default function NavBar() {
                 MERIXIUM <i className='fab fa-typo3' /> 
             </Link>
             <div className='menu-icon' onClick={handleClick}>
-                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                     <i className={click ? '<FontAwesomeIcon icon="fa-sharp fa-solid fa-speakers" />' /*'fas fa-times'*/ : 'fas fa-bars'} />
                      </div>
                      <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -44,7 +44,7 @@ export default function NavBar() {
                         </li>
                         <li className='nav-item'>
                             <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                                Contacts
+                                Contact
                             </Link>
                         </li>
                         <li className='nav-item'>
