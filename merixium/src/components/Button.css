@@ -2,12 +2,17 @@
     --primary: white;
 }
 
-.MuiButton{
+.btn{
+    background-color: transparent;
+    color: #fff;
     padding: 8px 20px;
-    border-radius: 2px;
-    outline: none;
-    border: none;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
     cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(73, 166, 166);
 }
 
 .btn--primary {
@@ -20,8 +25,8 @@
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
-   border: 1px solid var(--primary);
-   transition: all 0.3s ease-out;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
 }
 
 .btn--medium {

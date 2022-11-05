@@ -5,13 +5,15 @@ import './NavBar.css';
 import { Button } from './Button';
 
 
-export default function NavBar() {
+function NavBar() {
 
-    const path = window.location.pathname
+  
     const [click, setClick] = useState(false);
-    const handleClick =() => setClick(!click);
+    const [button, setButton] = useState(true);
+
+    const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    const [button, setButton] = useState(true)
+  
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -22,19 +24,20 @@ export default function NavBar() {
     }
 
     useEffect(() => {
-        showButton()
-    }, [])
+        showButton();
+    }, []);
 
     window.addEventListener('resize', showButton);
 
     return (
+        <>
     <nav className="navbar">
         <div className='navbar-container'>
             <Link to= "/'" className='navbar-logo' onClick={closeMobileMenu}>
-                MERIXIUM <i className='fab fa-typo3' /> 
+                MERIXIUM &nbsp; <i className='fa-solid fa-headphones-simple' /> 
             </Link>
             <div className='menu-icon' onClick={handleClick}>
-                     <i className={click ? '<FontAwesomeIcon icon="fa-sharp fa-solid fa-speakers" />' /*'fas fa-times'*/ : 'fas fa-bars'} />
+                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                      </div>
                      <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -58,11 +61,17 @@ export default function NavBar() {
                             </Link>
                         </li>
                         </ul>
-                        {button && <Button buttonStyle='btn--outline'>Easter Eggs</Button>}
+                        {button && <Button buttonStyle='btn--outline'>
+                            <Link to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
+                            Easter Eggs<i class="fa-brands fa-think-peaks"></i>
+                            </Link></Button>}
                     </div>
                     </nav>
-    )
+                    </>
+    );
 }
+
+export default NavBar;
 
 //<ul/>
 //<li>
