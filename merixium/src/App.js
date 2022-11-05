@@ -13,14 +13,6 @@ import Gratitude from './pages/Gratitude';
 import EasterEggs from './pages/EasterEggs';
 import './App.css';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#2e1667" //#4287f5 Hex
-    }
-  }
-
-})
 
 
   
@@ -80,6 +72,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route path = '/' exact component = {Home} />
+          <Route path='/About' component={About} />
+          <Route path='/Contact' component={Contact} />
+          <Route path='/Gratitude' component={Gratitude} />
+          <Route path='/EasterEggs' component={EasterEggs} />
         </Routes>
         <div className="container">{component}</div>
       </Router>
