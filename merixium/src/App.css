@@ -96,8 +96,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.contact {
+  background-image: url('/images/border-background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,4 +121,14 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.light-mode {
+  background-color: white;
+  color: black;
 }
