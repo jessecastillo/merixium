@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
 import { Component } from 'react';
+import Home from './pages/Home';
 import Links from './pages/Links';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
 import About from './pages/About';
 import Gratitude from './pages/Gratitude';
 import EasterEggs from './pages/EasterEggs';
@@ -23,7 +23,30 @@ import ScrollToTop from './components/ScrollToTop.js';
 function App() {
   
   const [bgColour, setBgColour] = useState("#fafafa");
+
   let component
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />
+      break
+    case "/links":
+      component = <Links />
+      break
+    case "/about":
+      component = <About />
+      break
+    case "/contact":
+      component = <Contact />
+      break
+    case "/gratitude":
+      component = <Gratitude />
+      break
+    case "/eastereggs":
+      component = <EasterEggs/>
+      break
+
+  }
+
   const appStyles = {
     height: "100vh",
     background: `${bgColour}`,
@@ -56,33 +79,14 @@ function App() {
 
 
 
-switch (window.location.pathname) {
-    case "/":
-      component = <Home />
-      break
-    case "/links":
-      component = <Links />
-      break
-    case "/about":
-      component = <About />
-      break
-    case "/contact":
-      component = <Contact />
-      break
-    case "/gratitude":
-      component = <Gratitude />
-      break
-    case "/eastereggs":
-      component = <EasterEggs/>
-      break
 
-  }
 
   return (
     <>
       <ScrollToTop />
       <Router>
         <NavBar />
+        <div className="container">{component}</div>
         <Routes>
           
           <Route path = '/' exact component = {Home} />
@@ -92,7 +96,7 @@ switch (window.location.pathname) {
           <Route path='/Gratitude' component={Gratitude} />
           <Route path='/EasterEggs' component={EasterEggs} />
         </Routes>
-        <div className="container">{component}</div>
+
         <div className='about'><h3>My DJ name is Merixium but my full name is Jesse Castillo!</h3></div>
       </Router>
   </>
