@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/merixium/static/css/main.90902f75.css",
+    "main.js": "/merixium/static/js/main.dafd8414.js",
+    "static/js/787.0cef616f.chunk.js": "/merixium/static/js/787.0cef616f.chunk.js",
+    "static/media/video-2.mp4": "/merixium/static/media/video-2.39e6c79bffb375ae929a.mp4",
+    "static/media/image-home3.jpg": "/merixium/static/media/image-home3.401bc3249351bb2868c7.jpg",
+    "static/media/border-background.jpg": "/merixium/static/media/border-background.5f78c815aa966d4c7cb1.jpg",
+    "static/media/img-1.jpg": "/merixium/static/media/img-1.53f4843759ebec256cb9.jpg",
+    "static/media/img-8.jpg": "/merixium/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
+    "static/media/pngwing.com.png": "/merixium/static/media/pngwing.com.ca9d00208782d87799d1.png",
+    "index.html": "/merixium/index.html",
+    "main.90902f75.css.map": "/merixium/static/css/main.90902f75.css.map",
+    "main.dafd8414.js.map": "/merixium/static/js/main.dafd8414.js.map",
+    "787.0cef616f.chunk.js.map": "/merixium/static/js/787.0cef616f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90902f75.css",
+    "static/js/main.dafd8414.js"
+  ]
+}
