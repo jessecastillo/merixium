@@ -2,10 +2,10 @@ import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
-import { Component } from 'react';
+import { component } from 'react';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Contact from './pages/Contact';
@@ -89,12 +89,12 @@ function App() {
         <div className="container">{component}</div>
         <Routes>
           
-          <Route path = '/' exact component = {Home} />
+          <Route path = '/' component = {Home} />
           <Route path = '/Links' component = {Links} />
-          <Route path='/About' component={About} />
-          <Route path='/Contact' component={Contact} />
-          <Route path='/Gratitude' component={Gratitude} />
-          <Route path='/EasterEggs' component={EasterEggs} />
+          <Route path='/About' component = {About} />
+          <Route path='/Contact' component = {Contact} />
+          <Route path='/Gratitude' component = {Gratitude} />
+          <Route path='/EasterEggs' component = {EasterEggs} />
         </Routes>
 
         <div className='about'><h3>My DJ name is Merixium but my full name is Jesse Castillo!</h3></div>

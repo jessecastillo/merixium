@@ -1,6 +1,6 @@
 //import { Button } from '@mui/material';
 import React, { useEffect, useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css';
 import { Button } from './Button';
 //import { HashLink as Link} from 'react-router-hash-link';
@@ -29,48 +29,63 @@ function NavBar() {
     }, []);
 
     window.addEventListener('resize', showButton);
-
+    const path = window.location.pathname
     return (
         <>
     <nav className="navbar">
         <div className='navbar-container'>
-            <Link to= "/" className='navbar-logo' onClick={closeMobileMenu}>
+            <NavLink to= "/" className='navbar-logo' onClick={closeMobileMenu}>
                 MERIXIUM &nbsp; <i className='fa-solid fa-headphones-simple' /> 
-            </Link>
+            </NavLink>
             <div className='menu-icon' onClick={handleClick}>
                      <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                      </div>
                      <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/links' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/links' className='nav-links' onClick={closeMobileMenu}>
                                 Links
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/about' className='nav-links' onClick={closeMobileMenu}>
                                 About
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 Contact
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/gratitude' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/gratitude' className='nav-links' onClick={closeMobileMenu}>
                                 Gratitude
-                            </Link>
+                            </NavLink>
                         </li>
                         </ul>
                         {button && <Button buttonStyle='btn--outline'>
-                            <Link to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
                             Easter Eggs<i class="fa-brands fa-think-peaks"></i>
-                            </Link></Button>}
+                            </NavLink></Button>}
                     </div>
                     </nav>
                     </>
     );
 }
+
+/*
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    )
+  }
+  */
 
 export default NavBar;
 
