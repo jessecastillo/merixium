@@ -1,17 +1,20 @@
-import { createMuiTheme, ThemeProvider } from '@mui/material/styles'
+import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
-import { NativeSelect } from '@mui/material';
 import { Component } from 'react';
+import Links from './pages/Links';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import About from './pages/About';
 import Gratitude from './pages/Gratitude';
 import EasterEggs from './pages/EasterEggs';
 import './App.css';
+import { elementAcceptingRef } from '@mui/utils';
+import ScrollToTop from './components/ScrollToTop.js';
 
 
 
@@ -35,16 +38,36 @@ function App() {
     padding: "0.25em 1em",
     background: "#c83f49",
   };
+  
+  /*
+  const Links = useRef(null);
+  const About = useRef(null);
+  const Contact = useRef(null);
+  const Gratitude = useRef(null);
+  const EasterEggs = useRef(null);
+  */
 
-  switch (window.location.pathname) {
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
+
+
+switch (window.location.pathname) {
     case "/":
       component = <Home />
       break
-    case "/contact":
-      component = <Contact />
+    case "/links":
+      component = <Links />
       break
     case "/about":
       component = <About />
+      break
+    case "/contact":
+      component = <Contact />
       break
     case "/gratitude":
       component = <Gratitude />
@@ -54,30 +77,23 @@ function App() {
       break
 
   }
-//return (
-//<div className="App" style={appStyles}>
-//  <button
-//  style={styles}
-//  onMouseEnter={() => setBgColour("#c83f49")}
-//  onMouseLeave={() => setBgColour("#fafafa")}
-//  >
-//    {" "}
-//    Red
-//    </button>
-//    </div>
-//    );
+
   return (
     <>
+      <ScrollToTop />
       <Router>
         <NavBar />
         <Routes>
+          
           <Route path = '/' exact component = {Home} />
+          <Route path = '/Links' component = {Links} />
           <Route path='/About' component={About} />
           <Route path='/Contact' component={Contact} />
           <Route path='/Gratitude' component={Gratitude} />
           <Route path='/EasterEggs' component={EasterEggs} />
         </Routes>
         <div className="container">{component}</div>
+        <div className='about'><h3>My DJ name is Merixium but my full name is Jesse Castillo!</h3></div>
       </Router>
   </>
   )
