@@ -1,7 +1,7 @@
 import { createMuiTheme, ThemeProvider } from '@mui/material/styles'
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
 import { NativeSelect } from '@mui/material';
