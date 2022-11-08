@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
-import { component } from 'react';
+import { Component } from 'react';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Contact from './pages/Contact';
@@ -19,7 +19,9 @@ import ScrollToTop from './components/ScrollToTop.js';
 
   
 
-function App() {
+function App({Component, pageProps}) {
+
+  <Component {...pageProps} />
   
   const [bgColour, setBgColour] = useState("#fafafa");
 
@@ -85,17 +87,17 @@ function App() {
       <ScrollToTop />
       <Router>
         <NavBar />
-        <div className="container">{component}</div>
         <Routes>
           <Route path = '/' component = {Home} />
-          <Route path = '/Links' component = {Links} />
-          <Route path='/About' component = {About} />
-          <Route path='/Contact' component = {Contact} />
-          <Route path='/Gratitude' component = {Gratitude} />
-          <Route path='/EasterEggs' component = {EasterEggs} />
+          <Route path = '/links' component = {Links} />
+          <Route path='/about' component = {About} />
+          <Route path='/contact' component = {Contact} />
+          <Route path='/gratitude' component = {Gratitude} />
+          <Route path='/eastereggs' component = {EasterEggs} />
         </Routes>
-
+        <div className="container">{component}</div>
         <div className='about'><h3>My DJ name is Merixium but my full name is Jesse Castillo!</h3></div>
+        
       </Router>
   </>
   )
