@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+//import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,7 +12,6 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Gratitude from './pages/Gratitude';
 import EasterEggs from './pages/EasterEggs';
-import './App.css';
 import { elementAcceptingRef } from '@mui/utils';
 import ScrollToTop from './components/ScrollToTop.js';
 
@@ -88,7 +87,6 @@ function App() {
         <NavBar />
         <div className="container">{component}</div>
         <Routes>
-          
           <Route path = '/' component = {Home} />
           <Route path = '/Links' component = {Links} />
           <Route path='/About' component = {About} />

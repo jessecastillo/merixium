@@ -34,38 +34,38 @@ function NavBar() {
         <>
     <nav className="navbar">
         <div className='navbar-container'>
-            <NavLink to= "/" className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to= "/" className='navbar-logo' onClick={closeMobileMenu}>
                 MERIXIUM &nbsp; <i className='fa-solid fa-headphones-simple' /> 
-            </NavLink>
+            </Link>
             <div className='menu-icon' onClick={handleClick}>
                      <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                      </div>
                      <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <NavLink to='/links' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/links' className='nav-links' onClick={closeMobileMenu}>
                                 Links
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                                 About
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 Contact
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/gratitude' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/gratitude' className='nav-links' onClick={closeMobileMenu}>
                                 Gratitude
-                            </NavLink>
+                            </Link>
                         </li>
                         </ul>
                         {button && <Button buttonStyle='btn--outline'>
-                            <NavLink to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
                             Easter Eggs<i class="fa-brands fa-think-peaks"></i>
-                            </NavLink></Button>}
+                            </Link></Button>}
                     </div>
                     </nav>
                     </>
