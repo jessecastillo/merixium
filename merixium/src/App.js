@@ -1,27 +1,30 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
-import { Component } from 'react';
+//import { Component } from 'react';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Gratitude from './pages/Gratitude';
 import EasterEggs from './pages/EasterEggs';
-import { elementAcceptingRef } from '@mui/utils';
+//import { elementAcceptingRef } from '@mui/utils';
 import ScrollToTop from './components/ScrollToTop.js';
+import { render } from 'react-dom';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
   
 
-function App({Component, pageProps}) {
+function App() {
 
-  <Component {...pageProps} />
+  
   
   const [bgColour, setBgColour] = useState("#fafafa");
 
@@ -45,10 +48,12 @@ function App({Component, pageProps}) {
     case "/eastereggs":
       component = <EasterEggs/>
       break
+      default:
+        return "/"
 
   }
 
-  const appStyles = {
+/*  const appStyles = {
     height: "100vh",
     background: `${bgColour}`,
   };
@@ -62,6 +67,7 @@ function App({Component, pageProps}) {
     padding: "0.25em 1em",
     background: "#c83f49",
   };
+  */
   
   /*
   const Links = useRef(null);
@@ -81,26 +87,26 @@ function App({Component, pageProps}) {
 
 
 
-
+  
   return (
     <>
       <ScrollToTop />
-      <Router>
-        <NavBar />
+      <BrowserRouter>
         <Routes>
-          <Route path = '/' component = {Home} />
-          <Route path = '/links' component = {Links} />
-          <Route path='/about' component = {About} />
-          <Route path='/contact' component = {Contact} />
-          <Route path='/gratitude' component = {Gratitude} />
-          <Route path='/eastereggs' component = {EasterEggs} />
+          <Route path = '/' element = {Home} />
+          <Route path = '/links' element = {Links} />
+          <Route path = '/about' element = {About} />
+          <Route path = '/contact' element = {Contact} />
+          <Route path = '/gratitude' element = {Gratitude} />
+          <Route path = '/eastereggs' element = {EasterEggs} />
         </Routes>
+        <NavBar />
         <div className="container">{component}</div>
-        <div className='about'><h3>My DJ name is Merixium but my full name is Jesse Castillo!</h3></div>
-        
-      </Router>
+        <div className='about'><h2>Hello! I have a lot of titles, but I go by DJ Merixium when I am energizing the crowd!</h2></div>
+      </BrowserRouter>
   </>
   )
+  
 }
 
 export default App;

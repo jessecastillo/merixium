@@ -1,8 +1,9 @@
 //import { Button } from '@mui/material';
 import React, { useEffect, useState} from 'react'
+import './../App.css';
 import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css';
-import { Button } from './Button';
+//import { Button } from './Button';
 //import { HashLink as Link} from 'react-router-hash-link';
 
 
@@ -32,9 +33,9 @@ function NavBar() {
     const path = window.location.pathname
     return (
         <>
-    <nav className="navbar">
+    <nav className='navbar'>
         <div className='navbar-container'>
-            <Link to= "/" className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to= '/' className='navbar-logo' onClick={closeMobileMenu}>
                 MERIXIUM &nbsp; <i className='fa-solid fa-headphones-simple' /> 
             </Link>
             <div className='menu-icon' onClick={handleClick}>
@@ -42,35 +43,37 @@ function NavBar() {
                      </div>
                      <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/links' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/links' className='nav-link' onClick={closeMobileMenu}>
                                 Links
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about' className='nav-link' onClick={closeMobileMenu}>
                                 About
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-link' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/gratitude' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/gratitude' className='nav-link' onClick={closeMobileMenu}>
                                 Gratitude
                             </Link>
                         </li>
                         </ul>
-                        {button && <Button buttonStyle='btn--outline'>
-                            <Link to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
-                            Easter Eggs<i class="fa-brands fa-think-peaks"></i>
-                            </Link></Button>}
                     </div>
                     </nav>
                     </>
     );
 }
+
+/*{button && <Button buttonStyle='btn--outline'>
+<Link to='/eastereggs' className='nav-links' onClick={closeMobileMenu}>
+Easter Eggs<i class="fa-brands fa-think-peaks"></i>
+</Link></Button>}
+*/
 
 /*
 function CustomLink({ to, children, ...props }) {
