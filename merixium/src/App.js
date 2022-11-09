@@ -95,8 +95,8 @@ function App() {
       <NavBar />
         <Routes>
           <Route path = '/' element = {<Home />} />
-          <Route exact path = '/links' element = {<Links/>} />
-          <Route exact path = '/about' element = {<About/>} />
+          <Route path = '/links' element = {<Links/>} />
+          <Route path = '/about' element = {<About/>} />
           <Route path = '/contact' element = {<Contact/>} />
           <Route path = '/gratitude' element = {<Gratitude />} />
           <Route path = '/eastereggs' element = {<EasterEggs />} />
