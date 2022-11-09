@@ -132,6 +132,30 @@ body::-webkit-scrollbar-thumb {
   color: black;
 }
 
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
 /* About page CSS */
 .about {
   background: url('/images/img-home1.jpg') center center/cover no-repeat; 

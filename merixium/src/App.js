@@ -92,21 +92,22 @@ function App() {
     <>
       <ScrollToTop />
       <BrowserRouter>
+      <NavBar />
         <Routes>
-          <Route path = '/' element = {Home} />
-          <Route path = '/links' element = {Links} />
-          <Route path = '/about' element = {About} />
-          <Route path = '/contact' element = {Contact} />
-          <Route path = '/gratitude' element = {Gratitude} />
-          <Route path = '/eastereggs' element = {EasterEggs} />
+          <Route path = '/' element = {<Home />} />
+          <Route exact path = '/links' element = {<Links/>} />
+          <Route exact path = '/about' element = {<About/>} />
+          <Route path = '/contact' element = {<Contact/>} />
+          <Route path = '/gratitude' element = {<Gratitude />} />
+          <Route path = '/eastereggs' element = {<EasterEggs />} />
         </Routes>
-        <NavBar />
-        <div className="container">{component}</div>
+ 
+        
         <div className='about'><h2>Hello! I have a lot of titles, but I go by DJ Merixium when I am energizing the crowd!</h2></div>
       </BrowserRouter>
   </>
   )
   
 }
-
+//<div className="container">{component}</div>
 export default App;
