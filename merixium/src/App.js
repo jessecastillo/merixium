@@ -1,10 +1,10 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-//import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
+
 //import { Component } from 'react';
 import Home from './pages/Home';
 import Links from './pages/Links';
@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop.js';
 import { render } from 'react-dom';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 
 
