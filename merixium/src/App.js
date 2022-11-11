@@ -1,7 +1,7 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
 
@@ -105,6 +105,7 @@ function App() {
  
         
         <div className='about'><h2>Hello! I have a lot of titles, but I go by DJ Merixium when I am energizing the crowd!</h2></div>
+        <div><Link to={{ pathname: "https://instagram.com/djmerixium/" }} target="_blank">Instagram</Link></div>
       </BrowserRouter>
   </>
   )
