@@ -104,12 +104,12 @@ function App() {
         </Routes>
  
         
-        <div className='about'><h2>Hello! I have a lot of titles, but I go by DJ Merixium when I am energizing the crowd!</h2></div>
-        <div><Link to={{ pathname: "https://instagram.com/djmerixium/" }} target="_blank">Instagram</Link></div>
+
       </BrowserRouter>
   </>
   )
   
 }
+//<div><Link to={{ pathname: "https://instagram.com/djmerixium/" }} target="_blank">Instagram</Link></div>
 //<div className="container">{component}</div>
 export default App;

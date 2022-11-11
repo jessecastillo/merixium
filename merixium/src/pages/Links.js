@@ -1,8 +1,11 @@
 import React from 'react'
+import Cards from '../components/Cards'
 
 function Links() {
     return (
-        <h1>ALL DA LINKS!</h1>
+        <div>
+            <Cards />
+        </div>
     )
 }
 
