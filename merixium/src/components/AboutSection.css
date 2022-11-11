@@ -23,10 +23,6 @@
     background-clip: padding-box;
     background-clip: padding-box;
     padding: 10px;
-    border: 1px solid black;
-    border-top: 2px solid #36454F;
-    border-top: 2px solid #36454F;
-    background-image: url(../../images/pngwing.com.png);
     
 }
 
@@ -58,7 +54,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .hero-container > h1 {
+  .about-main > h1 {
       font-size: 70px;
       margin-top: -150px;
       
@@ -66,18 +62,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container > h1 {
+  .about-main > h1 {
       font-size: 50px;
       margin-top: -100px;
   }
 }
 
-.hero-container > p {
+.about-main > p {
   font-size: 30px;
 }
 
 .btn-mobile {
-  display: block;
+
   text-decoration: none;
 }
 

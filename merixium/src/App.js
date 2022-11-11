@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop.js';
 import { render } from 'react-dom';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer.js';
 
 
 
@@ -103,7 +104,7 @@ function App() {
           <Route path = '/eastereggs' element = {<EasterEggs />} />
         </Routes>
  
-        
+        <Footer />
 
       </BrowserRouter>
   </>

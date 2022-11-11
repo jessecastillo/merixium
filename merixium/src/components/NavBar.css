@@ -90,7 +90,7 @@
       display:flow-root;
       flex-direction:column;
       width: 100%;
-      height: calc(85vh - 500px);
+      height: calc(92vh - 500px);
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -109,7 +109,7 @@
 
  
     .nav-menu.active {
-      background: #2a2a76;
+      background: #1b1b21;
       left: 0;
       opacity: 0.80;
       transition: all 0.5s ease;
@@ -126,7 +126,7 @@
     .nav-link:hover {
       background-color: #fff;
       color: #242424;
-      border-radius: 50px;
+      border-radius: 10px;
     }
  
     .navbar-logo {

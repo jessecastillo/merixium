@@ -4,6 +4,7 @@ import '../App.css';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 
+
 function Home() {
     return(
         <>
