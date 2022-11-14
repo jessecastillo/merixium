@@ -13,47 +13,46 @@ function ContactForm() {
       <label htmlFor="email" className='emailEntry'>
         Excited to hear from you!
       </label>
-      <label for="firstName">First Name</label>
+      <label for="firstName" className='label1'>First Name</label>
       <input className='firstName' 
       id="firstName"
       type="firstName"
       name="firstName"
       placeholder='First name...'
       />
-      <label for="lastName">Last Name</label>
+      <label for="lastName" className='label2'>Last Name</label>
       <input className='lastName'
       id="lastName"
       type="lastName"
       name="lastName"
       placeholder='Last name...'
       />
-      <label for="emailField">Email Address</label>
+      <label for="emailField" className='label3'>Email Address</label>
       <input className='emailField'
         id="email"
         type="email" 
         name="email"
-        placeholder='Email'
+        placeholder='Email...'
       />
       <ValidationError 
         prefix="Email" 
         field="email"
         errors={state.errors}
       />
-    <label for="fields">Message</label>
+       <label for="fields" className='label4'>Your Message</label>
       <textarea className='fields'
         id="message"
         name="message"
         placeholder='Type your message...'
       />
-      <h1>Break</h1>
       <ValidationError 
         prefix="Message" 
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      <Button className='btn' type="submit" disabled={state.submitting}>
         Submit
-      </button>
+      </Button>
     </form>
   );
   
