@@ -16,14 +16,15 @@ function HeroSection() {
                 >
                     GET STARTED
                 </Button>
-                <Button className='btns' buttonStyle='btn-primary'
-                buttonSize='btn--large'
-                >
-                    Watch Trailer <i className='far  fa-play-circle' />
-                </Button>
             </div>
         </div>
     )
 }
+
+/*<Button className='btns' buttonStyle='btn-primary'
+buttonSize='btn--large'
+>
+    Watch Trailer <i className='far  fa-play-circle' />
+</Button>*/
 
 export default HeroSection
