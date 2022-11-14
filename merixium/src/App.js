@@ -18,6 +18,7 @@ import { render } from 'react-dom';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
+import PageNotFound from './components/PageNotFound.js';
 
 
 
@@ -30,7 +31,7 @@ function App() {
   
   const [bgColour, setBgColour] = useState("#fafafa");
 
-  let component
+ /* let component
   switch (window.location.pathname) {
     case "/":
       component = <Home />
@@ -54,6 +55,8 @@ function App() {
         return "/"
 
   }
+
+  */
 
 /*  const appStyles = {
     height: "100vh",
@@ -101,7 +104,7 @@ function App() {
           <Route path = '/about' element = {<About/>} />
           <Route path = '/contact' element = {<Contact/>} />
           <Route path = '/gratitude' element = {<Gratitude />} />
-          <Route path = '/eastereggs' element = {<EasterEggs />} />
+          <Route path="*" element = {<PageNotFound /> } />
         </Routes>
  
         <Footer />
@@ -111,6 +114,7 @@ function App() {
   )
   
 }
+//          <Route path = '/eastereggs' element = {<EasterEggs />} />
 //<div><Link to={{ pathname: "https://instagram.com/djmerixium/" }} target="_blank">Instagram</Link></div>
 //<div className="container">{component}</div>
 export default App;
