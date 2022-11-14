@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 //import CustomButton from './components/CustomButton';
 import './App.css';
-
 //import { Component } from 'react';
 import Home from './pages/Home';
 import Links from './pages/Links';
@@ -15,7 +14,6 @@ import EasterEggs from './pages/EasterEggs';
 //import { elementAcceptingRef } from '@mui/utils';
 import ScrollToTop from './components/ScrollToTop.js';
 import { render } from 'react-dom';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import PageNotFound from './components/PageNotFound.js';
@@ -106,7 +104,7 @@ function App() {
           <Route path = '/gratitude' element = {<Gratitude />} />
           <Route path = '*' element = {<PageNotFound /> } />
         </Routes>
-        
+
         <Footer />
 
       </BrowserRouter>
