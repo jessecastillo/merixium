@@ -10,6 +10,8 @@
 }
 
 .not-found > h1 {
+    margin-left: 50px;
+    vertical-align:top;
     font-size: 100px;
     color: #fff;
     text-shadow:
@@ -23,6 +25,7 @@
         0 0 151px #5271ff;
 }
 .not-found > h2 {
+    margin-left: 50px;
     color: #fff;
     text-shadow:
         0 0 7px #fff,
@@ -33,4 +36,30 @@
         0 0 92px #5271ff,
         0 0 102px #5271ff,
         0 0 151px #5271ff;
+}
+
+.not-found > h3 {
+    margin-left: 50px;
+    font-weight: bold;
+    color:aqua;
+}
+
+.link-style{
+    margin-left: 50px;
+    font-size: x-large;
+    text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+    .hero-container > h1 {
+        font-size: 70px;
+        margin-top: -150px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1 {
+        font-size: 50px;
+        margin-top: -100px;
+    }
 }
