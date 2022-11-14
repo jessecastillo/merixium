@@ -62,7 +62,7 @@
   }
  
   .nav-link:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid gray;
     transition: all 0.2s ease-out;
   }
  
@@ -90,7 +90,7 @@
       display:flow-root;
       flex-direction:column;
       width: 100%;
-      height: calc(92vh - 500px);
+      height: calc(97vh - 500px);
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -112,7 +112,7 @@
       background: #1b1b21;
       left: 0;
       opacity: 0.80;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
       z-index: 1;
     }
  
