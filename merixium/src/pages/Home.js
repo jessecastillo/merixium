@@ -3,6 +3,7 @@ import Cards from '../components/Cards';
 import '../App.css';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import Contact from './Contact';
 
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
         <HeroSection />
         <Cards/>
         <AboutSection />
+        <Contact />
         </>
     )
     
