@@ -1,4 +1,13 @@
-export default function Gratitude() {
-    return <h1>Thank You So So Much!</h1>
-    
+import React from 'react'
+import './../App.css';
+import GratitudeSection from '../components/GratitudeSection'
+
+function Gratitude() {
+    return (
+        <div>
+            <GratitudeSection />
+        </div>
+    )
 }
+
+export default Gratitude
