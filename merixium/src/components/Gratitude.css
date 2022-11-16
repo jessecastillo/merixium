@@ -4,8 +4,39 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0,0, 0, 0.2);
     object-fit: contain;
+}
+
+.grat-container > h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 60px;
+    color: #A7EB00;
+    
+}
+
+.grat-container > h2 {
+    color: paleturquoise;
+    margin-right: 1000px;
+    text-align: center;
+
+}
+
+.grat-container > h3 {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 37px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 60px;
+    color: #fff;
 }
