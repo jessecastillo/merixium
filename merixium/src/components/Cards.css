@@ -3,11 +3,14 @@
   background: #fff;
   animation: pulsate 15s ease-in-out infinite;
   }
-  @keyframes pulsate { /* You can add more % with more colors! */
+
+  /*
+  @keyframes pulsate { // You can add more % with more colors! 
     0% {background-color: black;}
     50% {background-color: white;}
     100% {background-color: black;}
-  } 
+  }
+  */
  
   h1 {
     text-align:js;

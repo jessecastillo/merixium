@@ -8,7 +8,7 @@ function GratitudeSection() {
             <h2>There are so many thanks to impart:
             </h2>
             <h2>
-                Jesus Christ my Savior/
+                Jesus Christ my Lord and Savior/
             </h2>
             <h2>
                 My family and friends who have loved me and supported me in all my endeavors/
