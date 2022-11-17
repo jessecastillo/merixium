@@ -38,21 +38,21 @@
 }
 
 .amh2 {
-  color: #fff;
-  font-size: 20px;
-  margin-top: 10px;
+  margin-top: 90px;
+  color: #4cb7a5;
+  font-size: 27px;
   display: flex;
   text-align: center;
   transition: all .75s linear;
-  -webkit-text-stroke: 1px whitesmoke;
-  color: transparent;
+  -webkit-text-stroke: 1px #4cb7a5;
+
   background-clip: padding-box;
   background-clip: padding-box;
   padding: 10px;
 }
 
 .amh3 {
-  color: #fff;
+  color: aquamarine;
   font-size: 26px;
   margin-top: 35px;
   display: flex;
@@ -60,6 +60,18 @@
   -webkit-text-stroke: 1px aquamarine;
   color: transparent;
   padding: 10px;
+}
+
+.amh4 {
+  color: #007BB5;
+  font-size: 26px;
+  margin-top: 35px;
+  display: flex;
+  transition: all .75s linear;
+  -webkit-text-stroke: 1px #007BB5;
+
+  padding: 8px;
+
 }
 
 .amh3::before{
@@ -121,7 +133,7 @@
 @media screen and (max-width: 768px) {
   .amh2 {
       font-size: 20px;
-      margin-top: -70px;
+      margin-top: 70px;
       padding: 30px;
       display: flex;
       text-align: center;
@@ -148,6 +160,26 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .amh4  {
+      font-size: 20px;
+      margin-top: -40px;
+      padding: 30px;
+      display: flex;
+      text-align: center;
+      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .amh4 {
+      font-size: 20px;
+      margin-top: -40px;
+      padding: 30px;
+      display: flex;
+      text-align: center;
+  }
+}
 .about-main > p {
   font-size: 30px;
 }

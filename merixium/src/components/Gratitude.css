@@ -2,6 +2,7 @@
     outline: 1px solid red;
 }
 */
+
 .grat-container {
     background: url('../../images/gratitude.jpg') center center/cover no-repeat; 
     height: 100vh;
@@ -55,6 +56,8 @@
     text-align: center;
     object-fit: contain;
     flex-wrap: wrap;
+    padding-top: 30px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 960px) {
@@ -106,7 +109,7 @@
     .grat-container > h3 {
         font-size: 20px;
         margin-top: -20px;
-        padding: 20px;
+        padding: 30px;
         display: flex;
         text-align: center;
     }
