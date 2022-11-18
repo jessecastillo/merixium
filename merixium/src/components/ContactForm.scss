@@ -13,7 +13,23 @@
 .btn{
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 200px;
 }
+
+@media screen and (max-width: 960px) {
+  .btn {
+    width: 150px;
+      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 150px;
+  }
+}
+
+
   .form{
       background: url('../../images/contact.jpg') center center/cover no-repeat;
       text-align: center;
