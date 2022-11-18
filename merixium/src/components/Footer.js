@@ -51,9 +51,9 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='https://instagram.com/djmerixium'>Instagram</Link>
+            <a  href='https://instagram.com/djmerixium'>Instagram</a>
             <Link to='/'>Facebook</Link>
-            <Link to='https://youtube.com/@merixium'>Youtube</Link>
+            <a href='https://youtube.com/@merixium'>Youtube</a>
             <Link to='/'>Twitter</Link>
           </div>
         </div>
@@ -76,22 +76,24 @@ function Footer() {
             >
               <i class='fab fa-facebook-f' />
             </Link>
-            <Link
+            <a
               class='social-icon-link instagram'
-              to='https://instagram.com/djmerixium'
+              href='https://instagram.com/djmerixium'
               target='_blank'
               aria-label='Instagram'
+              rel='noreferrer'
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link youtube'
-              to='https://youtube.com/@merixium'
+              href='https://youtube.com/@merixium'
               target='_blank'
               aria-label='Youtube'
+              rel='noreferrer'
             >
               <i class='fab fa-youtube' />
-            </Link>
+            </a>
             <Link
               class='social-icon-link twitter'
               to='/'
