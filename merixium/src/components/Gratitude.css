@@ -1,7 +1,7 @@
-/* {
+* {
     outline: 1px solid red;
 }
-*/
+
 
 .grat-container {
     background: url('../../images/gratitude.jpg') center center/cover no-repeat; 
@@ -40,7 +40,7 @@
     text-align: center;
     display: flex;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     object-fit: contain;
     flex-wrap: wrap;
 
