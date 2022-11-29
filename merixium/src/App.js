@@ -1,7 +1,7 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Links from './pages/Links';
@@ -99,7 +99,7 @@ function App() {
           <Route path = '/about' element = {<About/>} />
           <Route path = '/contact' element = {<Contact/>} />
           <Route path = '/gratitude' element = {<Gratitude />} />
-          <Route path = '/*' element = {<PageNotFound /> } />
+          <Route path = '*' element = {<PageNotFound/>} />
         </Routes>
 
         <Footer />
