@@ -1,7 +1,7 @@
-* {
+/* {
     outline: 1px solid red;
 }
-
+*/
 .grat-container {
     background: url('../../images/gratitude.jpg') center center/cover no-repeat; 
     height: 100vh;
