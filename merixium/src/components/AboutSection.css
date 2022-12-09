@@ -76,7 +76,7 @@
 .amh41{
   color: silver;
   font-size: 32px;
-  padding: 8px;
+  padding: 25px;
 }
 
 .amh3::before{
@@ -133,7 +133,7 @@
   .amh2  {
       font-size: 20px;
       margin-top: -50px;
-      padding: 5px;
+      padding: 35px;
       display: flex;
       text-align: center;
   }
@@ -143,7 +143,7 @@
   .amh2 {
       font-size: 20px;
       margin-top: 5px;
-      padding: 5px;
+      padding: 35px;
       display: flex;
       text-align: center;
   }
