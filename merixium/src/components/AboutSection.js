@@ -11,9 +11,11 @@ function AboutSection() {
                 <h3 className='amh41'>I am a top-40 open-format DJ with heavy influences from EDM, funk, R&B, and Disco. </h3>
                 <h3 className='amh41'>When in the right setting I love playing hard techno, trance, progressive trance, and industrial techno!</h3>
                 <h3 className='amh4'>I will work with you to make sure every detail is perfect and your vision is achieved.</h3>
-                <h3 className='amh3'>I created this website from scratch using React.js and have loved every second put into it from design to implementation!</h3>
+
         </div>
     )
 }
+
+//                <h3 className='amh3'>I created this website from scratch using React.js and have loved every second put into it from design to implementation!</h3>
 
 export default AboutSection
