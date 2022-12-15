@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 960px) {
   .amh2  {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -50px;
       padding: 35px;
       display: flex;
@@ -141,7 +141,7 @@
 
 @media screen and (max-width: 768px) {
   .amh2 {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: 5px;
       padding: 35px;
       display: flex;
@@ -150,7 +150,7 @@
 }
 @media screen and (max-width: 960px) {
   .amh3  {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
@@ -161,7 +161,7 @@
 
 @media screen and (max-width: 768px) {
   .amh3 {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
@@ -171,7 +171,7 @@
 
 @media screen and (max-width: 960px) {
   .amh4  {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
@@ -184,7 +184,7 @@
 
 @media screen and (max-width: 768px) {
   .amh4 {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
@@ -195,7 +195,7 @@
 
 @media screen and (max-width: 960px) {
   .amh41  {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
@@ -206,7 +206,7 @@
 
 @media screen and (max-width: 768px) {
   .amh41 {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: -40px;
       padding: 30px;
       display: flex;
