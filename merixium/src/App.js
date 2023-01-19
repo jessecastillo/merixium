@@ -14,6 +14,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import PageNotFound from './components/PageNotFound.js';
+import FloatingComponent from './components/Undocked.js';
 
 
 
@@ -101,6 +102,7 @@ function App() {
           <Route path = '/gratitude' element = {<Gratitude />} />
           <Route path = '*' element = {<PageNotFound/>} />
         </Routes>
+        <FloatingComponent/>
 
         <Footer />
 
