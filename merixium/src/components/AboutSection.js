@@ -13,6 +13,7 @@ function AboutSection() {
                 <h3 className='amh4'>I will work with you to make sure every detail is perfect and your vision is achieved.</h3>
 
         </div>
+        
     )
 }
 

@@ -4,6 +4,7 @@
     "gh-pages-deploy": "^0.5.1"
   },
   "dependencies": {
+    "react-router-dom": "^6.4.3",
     "react-router-hash-link": "^2.4.3"
   }
 }
