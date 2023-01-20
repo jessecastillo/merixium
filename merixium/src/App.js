@@ -15,6 +15,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import PageNotFound from './components/PageNotFound.js';
 import FloatingComponent from './components/Undocked.js';
+import Identity from './components/Identity.js';
 
 
 
