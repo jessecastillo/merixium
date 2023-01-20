@@ -8,7 +8,8 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     display:grid;
-    outline: lightskyblue;
+    border-color: red;
+    border-width: 2px;
     background-color: lightskyblue;
     opacity: 75%;
     border-radius: 5px;

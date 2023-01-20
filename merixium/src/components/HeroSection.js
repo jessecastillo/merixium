@@ -8,7 +8,6 @@ import Identity from './Identity';
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <Identity className='iden'/>
             <video autoPlay loop muted playsInline src='/videos/video-2.mp4' type='video/mp4'></video>
             <h1>Your Euphonious Adventure AWAITS</h1>
             <p>What are you waiting for?</p>

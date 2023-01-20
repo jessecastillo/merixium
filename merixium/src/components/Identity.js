@@ -3,16 +3,16 @@ import "../components/Identity.css"
 
 const Identity = () => {
   return (
-    <iframe
+    <iframe 
     background='transparent'
-        height='300px'
+        height='200px'
         width='600px'
         scrolling='no'
       title="typewriter"
       src="https://codepen.io/hckkiu/embed/xxYbYQb?default-tab=result"
-      frameBorder="yes"
+      frameBorder="no"
       loading='lazy'
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; transparency"
+      allowTransparency='true'
       allowFullScreen="false"
     ></iframe>
   );
