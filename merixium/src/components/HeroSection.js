@@ -4,10 +4,19 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 import Identity from './Identity';
+import CallingCard from './CallingCard';
+
+
+
 
 function HeroSection() {
+    
+
     return (
         <div className='hero-container'>
+            <h3 data-value='DJ MERIXIUM'  className='letters'>
+                DJ MERIXIUM
+                </h3>
             <video autoPlay loop muted playsInline src='/videos/video-2.mp4' type='video/mp4'></video>
             <h1>Your Euphonious Adventure AWAITS</h1>
             <p>What are you waiting for?</p>
@@ -17,11 +26,12 @@ function HeroSection() {
                 >
                     GET STARTED
                 </Button>
+                
             </div>
         </div>
     )
 }
-
+ 
 
 /*<Button className='btns' buttonStyle='btn-primary'
 buttonSize='btn--large'

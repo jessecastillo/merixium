@@ -16,6 +16,7 @@ import Footer from './components/Footer.js';
 import PageNotFound from './components/PageNotFound.js';
 import FloatingComponent from './components/Undocked.js';
 import Identity from './components/Identity.js';
+import CallingCard from './components/CallingCard.js';
 
 
 
@@ -104,6 +105,7 @@ function App() {
           <Route path = '*' element = {<PageNotFound/>} />
         </Routes>
         <FloatingComponent/>
+
 
         <Footer />
 
