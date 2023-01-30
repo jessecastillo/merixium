@@ -1,22 +1,26 @@
-import React from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import '../App.css';
 //import { Button } from '@mui/material';
 import { Button } from './Button';
 import './HeroSection.css';
-import Identity from './Identity';
-import CallingCard from './CallingCard';
+import RandomText from '../components/CallingCard';
+
+
 
 
 
 
 function HeroSection() {
-    
+
+
+
 
     return (
+        
         <div className='hero-container'>
-            <h3 data-value='DJ MERIXIUM'  className='letters'>
-                DJ MERIXIUM
-                </h3>
+            <h3> 
+                <RandomText text="DJ Merixium"/>
+            </h3>
             <video autoPlay loop muted playsInline src='/videos/video-2.mp4' type='video/mp4'></video>
             <h1>Your Euphonious Adventure AWAITS</h1>
             <p>What are you waiting for?</p>
@@ -48,3 +52,4 @@ buttonSize='btn--large'
             */
 
 export default HeroSection
+

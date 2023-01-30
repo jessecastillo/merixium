@@ -5,8 +5,8 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import Contact from './Contact';
 import GratitudeSection from '../components/GratitudeSection';
-import Identity from '../components/Identity';
-import { Carousel } from 'bootstrap';
+
+
 
 
 function Home() {

@@ -1,22 +1,19 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
 import React, { useState } from "react";
-import { Link, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Gratitude from './pages/Gratitude';
-import EasterEggs from './pages/EasterEggs';
 import ScrollToTop from './components/ScrollToTop.js';
-import { render } from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import PageNotFound from './components/PageNotFound.js';
-import FloatingComponent from './components/Undocked.js';
-import Identity from './components/Identity.js';
-import CallingCard from './components/CallingCard.js';
+import RandomText from './components/CallingCard.js';
+
+
 
 
 
@@ -26,7 +23,7 @@ import CallingCard from './components/CallingCard.js';
 function App() {
 
   
-  
+
   const [bgColour, setBgColour] = useState("#fafafa");
 
  /* let component
@@ -104,9 +101,7 @@ function App() {
           <Route path = '/gratitude' element = {<Gratitude />} />
           <Route path = '*' element = {<PageNotFound/>} />
         </Routes>
-        <FloatingComponent/>
-
-
+        <RandomText text="Merixium"/>
         <Footer />
 
       </BrowserRouter>
