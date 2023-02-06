@@ -1,6 +1,6 @@
 //import { useRef } from 'react';
 import NavBar from './components/NavBar.js';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import Home from './pages/Home';
 import Links from './pages/Links';
@@ -25,6 +25,12 @@ function App() {
   
 
   const [bgColour, setBgColour] = useState("#fafafa");
+  const PageTitle = (props) => {
+    useEffect(() => {
+      document.title = props.title;
+    }, [props.title]);
+    return null;
+  };
 
  /* let component
   switch (window.location.pathname) {
@@ -90,6 +96,7 @@ function App() {
   
   return (
     <>
+      <PageTitle title = "Merixium" />
       <ScrollToTop />
       <BrowserRouter>
       <NavBar />
