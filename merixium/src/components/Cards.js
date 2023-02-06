@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom';
            <CardItem
                src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80'/*'../../images/img-3.jpg'*/
                text='One stop for all of my social media!'
-               label='Link Tree'
-               path='https://linktr.ee/merixium'
+               label='Links'
+               path='http://links.merixium.com'
              />
              <CardItem
                src='https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3174&q=80'/*'https://images.unsplash.com/photo-1663243749454-70b8b93d7425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'*//*'../../images/img-1.jpg'*/
